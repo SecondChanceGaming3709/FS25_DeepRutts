@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="109" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>SecondChanceGaming3709</author>
+    <version>1.0.0.0</version>
+
+    <title>
+        <en>Deep Mud Ruts</en>
+    </title>
+
+    <description>
+        <en><![CDATA[
+Increases FS25's native wheel terrain-displacement strength for deeper physical ruts.
+
+The game still determines deformation from ground type, moisture, vehicle weight, tire width, and speed.
+
+Four in-game rut-depth presets:
+- Off / Base Game: 1.00x
+- Default: 1.75x
+- Medium: 2.25x
+- High: 2.50x
+
+Change the preset under Game Settings -> Deep Ruts. Default is 1.75x.
+
+Compatible by design with:
+- Mud System Physics
+- Use Up Your Tyres
+
+This mod changes only terrain displacement. It does not replace mud traction, tire-pressure, tire-wear, wheel-radius, or extra-sink systems.
+]]></en>
+    </description>
+
+    <iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/DeepMudRuts.lua"/>
+        <sourceFile filename="scripts/DeepMudRutsSettingsEvent.lua"/>
+        <sourceFile filename="scripts/DeepMudRutsSettings.lua"/>
+    </extraSourceFiles>
+
+    <l10n>
+        <text name="dmr_settingsTitle">
+            <en>Deep Ruts</en>
+        </text>
+        <text name="dmr_settingRutDepth">
+            <en>Rut depth</en>
+        </text>
+        <text name="dmr_presetStandard">
+            <en>Off / Base Game (1.00x)</en>
+        </text>
+        <text name="dmr_presetLow">
+            <en>Default (1.75x)</en>
+        </text>
+        <text name="dmr_presetMedium">
+            <en>Medium (2.25x)</en>
+        </text>
+        <text name="dmr_presetHigh">
+            <en>High (2.50x)</en>
+        </text>
+        <text name="dmr_settingRutDepthDescription">
+            <en>Controls native terrain displacement depth. The server host or administrator controls this setting in multiplayer.</en>
+        </text>
+    </l10n>
+</modDesc>
