@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<deepMudRuts>
+    <!--
+        Packaged default used when a savegame has no stored preset:
+        1.75 = Default
+
+        FS25 still applies the terrain's firmness, wet firmness, viscosity,
+        vehicle weight, tire width, ground moisture, and vehicle speed.
+    -->
+    <settings rutDepthMultiplier="1.75"/>
+</deepMudRuts>

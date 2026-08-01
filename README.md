@@ -1,65 +1,61 @@
-# FS25_DeepRutts
-Make every pass leave a deeper mark.
+# FS25 Deep Ruts
 
-
-# Deep Ruts – FS25
+![FS25 Deep Ruts mod icon](icon.jpg)
 
 **Make every pass leave a deeper mark.**
 
-Deep Ruts increases the strength of Farming Simulator 25’s native ground-deformation system, allowing tractors and other vehicles to leave deeper, more noticeable physical wheel ruts on supported terrain.
+Deep Ruts is a gameplay mod for Farming Simulator 25 that increases the strength of the game's native dynamic terrain deformation. Vehicles leave deeper physical wheel ruts while FS25 continues to determine the result from the ground, moisture, vehicle, tires, and driving conditions.
 
-The mod does not replace FS25’s deformation system or add fake tire-track decals. Terrain type, ground moisture, vehicle weight, tire width, and driving speed still determine how the ground reacts.
+## Download
 
-## Rut Depth Settings
+Download the ready-to-use mod: [FS25_DeepMudRuts.zip](FS25_DeepMudRuts.zip)
 
-Change the rut depth under **Game Settings → Deep Ruts**:
+Place the ZIP in:
 
-* **Off / Base Game – 1.00x**
-* **Default – 1.75x**
-* **Medium – 2.25x**
-* **High – 2.50x**
+```text
+Documents/My Games/FarmingSimulator2025/mods
+```
 
-The selected setting is saved with your savegame and applies immediately.
+Select the mod when loading your savegame and make sure FS25's **Ground Deformation** gameplay setting is enabled.
 
-## Mod Compatibility
+## Rut-depth settings
 
-Deep Ruts is designed to work alongside:
+Change the preset under **Game Settings → Deep Ruts**.
 
-* **Mud System Physics**
-* **Use Up Your Tyres**
+| Setting | Displacement scale |
+| --- | ---: |
+| Off / Base Game | 1.00× |
+| Default | 1.75× |
+| Medium | 2.25× |
+| High | 2.50× |
 
-Deep Ruts changes only the native terrain-displacement strength. Mud System Physics can continue controlling mud sinking, traction, resistance, tire pressure, and related mud effects.
+The default setting is **1.75×**. The selected preset is stored with the savegame and applies immediately to loaded wheels.
 
-Use Up Your Tyres can continue controlling tire wear, worn tire radius, and wear-related friction.
+## Surface behavior
 
-## Performance
+Deep Ruts changes only FS25's native wheel terrain-displacement scale. It does not make every surface deformable. Concrete, paved surfaces, and other ground types that the game or map defines as non-deformable remain unaffected. Results on gravel and custom map materials depend on how that map has configured native ground deformation.
 
-Deep Ruts does not add a continuous per-frame update loop. The selected multiplier is applied when wheel physics initializes or when the setting changes. Actual terrain deformation is still processed by FS25’s native system.
+## Compatibility
 
-Performance impact should be minimal, although very high ground-deformation settings may have a greater visual impact on heavily traveled areas.
+Designed to work alongside:
 
-## Requirements
+- **Mud System Physics**
+- **Use Up Your Tyres**
 
-* Farming Simulator 25
-* **Ground Deformation must be enabled** in the game settings
-* The map must support FS25’s native dynamic ground deformation
+Deep Ruts changes only `WheelPhysics.displacementScale`. It does not replace mud traction, tire pressure, tire wear, wheel radius, resistance, friction, or extra-sink systems, allowing the other mods to continue handling those features.
 
 ## Multiplayer
 
-Multiplayer is supported. The server host or administrator controls the rut-depth setting, which is synchronized with joining players.
+Multiplayer is supported. The server host or administrator controls the rut-depth setting, which is synchronized to joining players.
 
-For the best results, all players should use the same mod version.
+## Performance
 
-## Installation
+The mod adds no per-frame update loop. It applies the selected scale when wheel physics initializes and when the setting changes. Visible deformation is still handled by FS25's native ground-deformation system.
 
-1. Download `FS25_DeepMudRuts.zip`.
+## Version
 
-2. Place the ZIP file in:
+**1.0.0.0**
 
-   `Documents/My Games/FarmingSimulator2025/mods`
+## Author
 
-3. Enable **Deep Ruts** when loading your savegame.
-
-4. Select your preferred depth under **Game Settings → Deep Ruts**.
-
-**Author: SecondChanceGaming3709**
+**SecondChanceGaming3709**
